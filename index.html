@@ -1,15 +1,215 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<title>Dahiana y Felipe ❤️</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dahiana ❤️ Felipe</title>
+
+<style>
+body{
+margin:0;
+font-family:Georgia, serif;
+background:#fff0f5;
+color:#333;
+text-align:center;
+}
+
+.hero{
+padding:60px 20px;
+background:linear-gradient(135deg,#ff9ecf,#ffcce5);
+color:white;
+}
+
+h1{
+font-size:3em;
+margin:0;
+}
+
+.seccion{
+padding:40px 20px;
+}
+
+img{
+width:90%;
+max-width:400px;
+border-radius:20px;
+box-shadow:0 0 20px rgba(0,0,0,.2);
+margin-top:15px;
+}
+
+.carta{
+background:white;
+max-width:700px;
+margin:auto;
+padding:25px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(0,0,0,.15);
+line-height:1.8;
+text-align:left;
+}
+
+.contador{
+font-size:1.5em;
+font-weight:bold;
+color:#e91e63;
+}
+
+.frase{
+font-size:1.2em;
+font-style:italic;
+margin-top:15px;
+}
+
+button{
+padding:15px 25px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#ff4f8b;
+color:white;
+cursor:pointer;
+}
+
+#contenido{
+display:none;
+}
+
+#sobre{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:linear-gradient(135deg,#ffb6d9,#ffd9eb);
+}
+
+.final{
+padding:80px 20px;
+background:#ffb6d9;
+color:white;
+}
+</style>
 </head>
-<body style="text-align:center;font-family:Arial;background:#ffe6f0;padding:50px;">
-<h1>Dahiana & Felipe ❤️</h1>
 
-<p>Nuestra historia comenzó el 15 de abril de 2023.</p>
+<body>
 
-<h2>Te amo Felipe 💕</h2>
+<div id="sobre">
+<h1>💌</h1>
+<h2>Para Felipe ❤️</h2>
+<p>Tengo algo especial para ti...</p>
+<button onclick="abrirCarta()">Abrir carta</button>
+</div>
 
-<p>Esta es la primera página de nuestros recuerdos juntos.</p>
+<div id="contenido">
+
+<div class="hero">
+<h1>Dahiana ❤️ Felipe</h1>
+<p>Desde el 15 de abril de 2023</p>
+</div>
+
+<div class="seccion">
+<h2>⏳ Nuestro tiempo juntos</h2>
+<div class="contador" id="contador"></div>
+</div>
+
+<div class="seccion">
+<h2>💌 Carta para ti</h2>
+
+<div class="carta">
+Mi amor, hoy quise hacerte algo diferente. No es una fecha especial , y no es el regalo más grande,
+  pero sí uno hecho con mucho amor. ❤️Desde ese 15 de abril de 2023 mi vida cambió de una manera que
+  nunca imaginé y a partir de eso soy la mas feliz. Gracias por acompañarme en cada etapa, por escucharme, 
+  por soportar mis días difíciles y por celebrar conmigo los momentos felices.Cada foto aquí guarda un
+  recuerdo especial que siempre estará en mi corazón, pero lo que realmente guardo siempre es todo lo que 
+  hemos vivido para llegar hasta aquí.Gracias por elegirme cada día y por permitirme compartir la vida contigo.
+  Si volviera al día en que me preguntaste si quería ser tu novia, volvería a decir que sí una y mil veces más.
+  Te amo muchísimo y como siempre decimos, vamos a seguir escribiendo nuestros historia por siempre. D ❤️
+</div>
+</div>
+
+<div class="seccion">
+<h2>✨ El día que comenzó nuestra historia</h2>
+<p>15 de abril de 2023 ❤️</p>
+<img src="IMG-20261123-WA0011.jpg">
+<p class="frase">
+Nunca olvidaré este día porque aquí comenzó nuestra historia.
+</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0012.jpg">
+<p class="frase">Gracias por cada recuerdo que hemos construido.</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0013.jpg">
+<p class="frase">Mi lugar favorito siempre será a tu lado.</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0014.jpg">
+<p class="frase">Hay momentos que quisiera congelar para siempre.</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0015.jpg">
+<p class="frase">Contigo los días ordinarios se vuelven extraordinarios.</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0016.jpg">
+<p class="frase">Eres mi persona favorita para vivir cada aventura.</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0017.jpg">
+<p class="frase">Gracias por tu cariño y tu compañía.</p>
+</div>
+
+<div class="seccion">
+<img src="IMG-20261123-WA0018.jpg">
+<p class="frase">Amo cada versión de nosotros.</p>
+</div>
+
+<div class="final">
+<h2>❤️</h2>
+<h2>Felipe...</h2>
+<p>
+Si pudiera volver a empezar, te volvería a elegir una y mil veces más.
+</p>
+
+<p>
+Gracias por formar parte de mi vida y por todos los recuerdos que aún nos faltan por vivir.
+</p>
+
+<h3>Te amo ❤️</h3>
+</div>
+
+</div>
+
+<script>
+
+function abrirCarta(){
+document.getElementById('sobre').style.display='none';
+document.getElementById('contenido').style.display='block';
+}
+
+function actualizarContador(){
+const inicio = new Date("2023-04-15");
+const ahora = new Date();
+
+let diff = ahora - inicio;
+
+let dias = Math.floor(diff/(1000*60*60*24));
+
+document.getElementById("contador").innerHTML =
+dias + " días juntos ❤️";
+}
+
+actualizarContador();
+setInterval(actualizarContador,1000);
+
+</script>
+
 </body>
 </html>
